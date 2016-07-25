@@ -4,30 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MLLaunchADView.xcscheme</key>
+		<key>Pods-MLLaunchADView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>UI_PRO.xcscheme</key>
+		<key>Pods-UI_PRO.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8AC224B81D41BECC002BC2FF</key>
+		<key>01EF3C7C8A2CBD12A7A0B5349350B86B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8AC224D61D41C78E002BC2FF</key>
+		<key>2E44B5CB5FE91259F761A8D06B7A4CB5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8AC224F11D41C7C2002BC2FF</key>
+		<key>7AB5D6D9A0A4C5FDC0E35D59E5F38604</key>
 		<dict>
 			<key>primary</key>
 			<true/>
