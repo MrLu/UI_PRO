@@ -41,6 +41,8 @@ typedef void(^DismissAction)(BOOL hasCacheImages, BOOL isTap,  NSString * _Nulla
 @property (nonatomic, assign) NSTimeInterval seconds; //default 5s;
 @property (nonatomic, assign) BOOL enableLog; //是否开启log
 
+@property (nonatomic, copy) void (^dismissAnimations)(void);
+
 + (instancetype)shareInstance;
 
 + (instancetype)showInView:(nullable UIView *)view

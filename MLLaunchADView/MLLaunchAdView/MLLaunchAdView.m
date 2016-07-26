@@ -183,7 +183,7 @@ static dispatch_queue_t _downloadQueue;
     [closeBtn addTarget:self action:@selector(cancelBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     _closeBtn = closeBtn;
     [self addSubview:closeBtn];
- 
+    
     UIButton *delayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [delayBtn setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.5]];
     [delayBtn setFrame:CGRectMake(CGRectGetWidth(self.frame) - 100, 20, 40, 35)];
@@ -198,7 +198,6 @@ static dispatch_queue_t _downloadQueue;
 //缓存ImageUrl
 + (void)cacheImages:(NSArray<AdModel *> *)imagesUrlArray
 {
-    
     if (imagesUrlArray && [imagesUrlArray count]>0) {
         [imagesUrlArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             NSString *imagesUrl = [(AdModel *)obj imageUrl];
@@ -266,7 +265,7 @@ static dispatch_queue_t _downloadQueue;
 }
 
 - (AdModel *)setDisplayImage:(NSArray *)imagesUrlArray{
-
+    
     //保存显示时间相同的图片数
     NSMutableArray *tempArray = [NSMutableArray array];
     if ([imagesUrlArray count] > 0) {
@@ -296,15 +295,26 @@ static dispatch_queue_t _downloadQueue;
     _isShow = NO;
     [_timer invalidate];
     _timer = nil;
-    [UIView animateWithDuration:0.5 delay:0.25 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        [self setAlpha:0];
-    } completion:^(BOOL finished) {
-        [self removeFromSuperview];
-        self.cusWindow.rootViewController = nil;
-        [self.cusWindow setHidden:YES];
-        self.cusWindow = nil;
-        self.dismissAction(hasCacheImages,isTap,_contentImageView.imageUrl);
-    }];
+    __weak typeof(self) weakself = self;
+    if (self.dismissAction) {
+        [UIView animateWithDuration:0.5 delay:0.25 options:UIViewAnimationOptionCurveEaseInOut animations:weakself.dismissAnimations completion:^(BOOL finished) {
+            [weakself removeFromSuperview];
+            weakself.cusWindow.rootViewController = nil;
+            [weakself.cusWindow setHidden:YES];
+            weakself.cusWindow = nil;
+            weakself.dismissAction(hasCacheImages,isTap,self.contentImageView.imageUrl);
+        }];
+    } else {
+        [UIView animateWithDuration:0.5 delay:0.25 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [weakself setAlpha:0];
+        } completion:^(BOOL finished) {
+            [weakself removeFromSuperview];
+            weakself.cusWindow.rootViewController = nil;
+            [weakself.cusWindow setHidden:YES];
+            weakself.cusWindow = nil;
+            weakself.dismissAction(hasCacheImages,isTap,weakself.contentImageView.imageUrl);
+        }];
+    }
 }
 
 #pragma mark - property Getter/Setter
