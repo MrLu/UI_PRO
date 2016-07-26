@@ -23,6 +23,18 @@
 		8AC224FF1D41C7C2002BC2FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC224FD1D41C7C2002BC2FF /* Main.storyboard */; };
 		8AC225011D41C7C2002BC2FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC225001D41C7C2002BC2FF /* Assets.xcassets */; };
 		8AC225041D41C7C2002BC2FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC225021D41C7C2002BC2FF /* LaunchScreen.storyboard */; };
+		8AFF218C1D47385F005D2A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF218B1D47385F005D2A5E /* main.m */; };
+		8AFF218F1D47385F005D2A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF218E1D47385F005D2A5E /* AppDelegate.m */; };
+		8AFF21921D47385F005D2A5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21911D47385F005D2A5E /* ViewController.m */; };
+		8AFF21951D47385F005D2A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF21931D47385F005D2A5E /* Main.storyboard */; };
+		8AFF21971D47385F005D2A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF21961D47385F005D2A5E /* Assets.xcassets */; };
+		8AFF219A1D47385F005D2A5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF21981D47385F005D2A5E /* LaunchScreen.storyboard */; };
+		8AFF21A21D473887005D2A5E /* MLFloatHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21A11D473887005D2A5E /* MLFloatHelpView.m */; };
+		8AFF21A31D473887005D2A5E /* MLFloatHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21A11D473887005D2A5E /* MLFloatHelpView.m */; };
+		8AFF21A41D473887005D2A5E /* MLFloatHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21A11D473887005D2A5E /* MLFloatHelpView.m */; };
+		8AFF21A71D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21A61D4738B6005D2A5E /* BJLiveCourseFloatView.m */; };
+		8AFF21A81D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21A61D4738B6005D2A5E /* BJLiveCourseFloatView.m */; };
+		8AFF21A91D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21A61D4738B6005D2A5E /* BJLiveCourseFloatView.m */; };
 		C29F21EF666011BEAD5D6A11 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD292CE240579171C352E879 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +65,20 @@
 		8AC225001D41C7C2002BC2FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AC225031D41C7C2002BC2FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AC225051D41C7C2002BC2FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFF21881D47385F005D2A5E /* MLFloatHelpView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLFloatHelpView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFF218B1D47385F005D2A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8AFF218D1D47385F005D2A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8AFF218E1D47385F005D2A5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8AFF21901D47385F005D2A5E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8AFF21911D47385F005D2A5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8AFF21941D47385F005D2A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AFF21961D47385F005D2A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AFF21991D47385F005D2A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AFF219B1D47385F005D2A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFF21A01D473887005D2A5E /* MLFloatHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLFloatHelpView.h; sourceTree = "<group>"; };
+		8AFF21A11D473887005D2A5E /* MLFloatHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLFloatHelpView.m; sourceTree = "<group>"; };
+		8AFF21A51D4738B6005D2A5E /* BJLiveCourseFloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLiveCourseFloatView.h; sourceTree = "<group>"; };
+		8AFF21A61D4738B6005D2A5E /* BJLiveCourseFloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJLiveCourseFloatView.m; sourceTree = "<group>"; };
 		B13AC0A47E6CD0C812C1C5D1 /* Pods-MLLaunchADView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLLaunchADView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLLaunchADView/Pods-MLLaunchADView.release.xcconfig"; sourceTree = "<group>"; };
 		B2A1A6CC7253EAB85301900E /* libPods-MLLaunchADView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLLaunchADView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD292CE240579171C352E879 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +99,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				06771BBD0C28259135162E3D /* libPods-MLLaunchADView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFF21851D47385F005D2A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +147,7 @@
 			children = (
 				8AC224BB1D41BECC002BC2FF /* UI_PRO */,
 				8AC224F31D41C7C2002BC2FF /* MLLaunchADView */,
+				8AFF21891D47385F005D2A5E /* MLFloatHelpView */,
 				8AC224BA1D41BECC002BC2FF /* Products */,
 				89D8EE35A262231B33971BDA /* Pods */,
 				3838E02CD78060D13D77301D /* Frameworks */,
@@ -125,6 +159,7 @@
 			children = (
 				8AC224B91D41BECC002BC2FF /* UI_PRO.app */,
 				8AC224F21D41C7C2002BC2FF /* MLLaunchADView.app */,
+				8AFF21881D47385F005D2A5E /* MLFloatHelpView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +213,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8AFF21891D47385F005D2A5E /* MLFloatHelpView */ = {
+			isa = PBXGroup;
+			children = (
+				8AFF21A51D4738B6005D2A5E /* BJLiveCourseFloatView.h */,
+				8AFF21A61D4738B6005D2A5E /* BJLiveCourseFloatView.m */,
+				8AFF219F1D473887005D2A5E /* MLFloatHelpView */,
+				8AFF218D1D47385F005D2A5E /* AppDelegate.h */,
+				8AFF218E1D47385F005D2A5E /* AppDelegate.m */,
+				8AFF21901D47385F005D2A5E /* ViewController.h */,
+				8AFF21911D47385F005D2A5E /* ViewController.m */,
+				8AFF21931D47385F005D2A5E /* Main.storyboard */,
+				8AFF21961D47385F005D2A5E /* Assets.xcassets */,
+				8AFF21981D47385F005D2A5E /* LaunchScreen.storyboard */,
+				8AFF219B1D47385F005D2A5E /* Info.plist */,
+				8AFF218A1D47385F005D2A5E /* Supporting Files */,
+			);
+			path = MLFloatHelpView;
+			sourceTree = "<group>";
+		};
+		8AFF218A1D47385F005D2A5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AFF218B1D47385F005D2A5E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8AFF219F1D473887005D2A5E /* MLFloatHelpView */ = {
+			isa = PBXGroup;
+			children = (
+				8AFF21A01D473887005D2A5E /* MLFloatHelpView.h */,
+				8AFF21A11D473887005D2A5E /* MLFloatHelpView.m */,
+			);
+			path = MLFloatHelpView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +292,23 @@
 			productReference = 8AC224F21D41C7C2002BC2FF /* MLLaunchADView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8AFF21871D47385F005D2A5E /* MLFloatHelpView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFF219C1D47385F005D2A5E /* Build configuration list for PBXNativeTarget "MLFloatHelpView" */;
+			buildPhases = (
+				8AFF21841D47385F005D2A5E /* Sources */,
+				8AFF21851D47385F005D2A5E /* Frameworks */,
+				8AFF21861D47385F005D2A5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLFloatHelpView;
+			productName = MLFloatHelpView;
+			productReference = 8AFF21881D47385F005D2A5E /* MLFloatHelpView.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,6 +322,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					8AC224F11D41C7C2002BC2FF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					8AFF21871D47385F005D2A5E = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -253,6 +344,7 @@
 			targets = (
 				8AC224B81D41BECC002BC2FF /* UI_PRO */,
 				8AC224F11D41C7C2002BC2FF /* MLLaunchADView */,
+				8AFF21871D47385F005D2A5E /* MLFloatHelpView */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +367,16 @@
 				8AC225041D41C7C2002BC2FF /* LaunchScreen.storyboard in Resources */,
 				8AC225011D41C7C2002BC2FF /* Assets.xcassets in Resources */,
 				8AC224FF1D41C7C2002BC2FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFF21861D47385F005D2A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFF219A1D47385F005D2A5E /* LaunchScreen.storyboard in Resources */,
+				8AFF21971D47385F005D2A5E /* Assets.xcassets in Resources */,
+				8AFF21951D47385F005D2A5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +480,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFF21A21D473887005D2A5E /* MLFloatHelpView.m in Sources */,
 				8AC224C41D41BECC002BC2FF /* ViewController.m in Sources */,
+				8AFF21A71D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */,
 				8AC224C11D41BECC002BC2FF /* AppDelegate.m in Sources */,
 				8AC224BE1D41BECC002BC2FF /* main.m in Sources */,
 				8A23C68B1D4202B30070C6F0 /* MLLaunchAdView.m in Sources */,
@@ -389,10 +493,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFF21A31D473887005D2A5E /* MLFloatHelpView.m in Sources */,
 				8AC224FC1D41C7C2002BC2FF /* ViewController.m in Sources */,
+				8AFF21A81D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */,
 				8AC224F91D41C7C2002BC2FF /* AppDelegate.m in Sources */,
 				8AC224F61D41C7C2002BC2FF /* main.m in Sources */,
 				8A23C68C1D4202B30070C6F0 /* MLLaunchAdView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFF21841D47385F005D2A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFF21921D47385F005D2A5E /* ViewController.m in Sources */,
+				8AFF218F1D47385F005D2A5E /* AppDelegate.m in Sources */,
+				8AFF21A91D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */,
+				8AFF21A41D473887005D2A5E /* MLFloatHelpView.m in Sources */,
+				8AFF218C1D47385F005D2A5E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +545,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				8AC225031D41C7C2002BC2FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8AFF21931D47385F005D2A5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFF21941D47385F005D2A5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AFF21981D47385F005D2A5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFF21991D47385F005D2A5E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -564,6 +698,28 @@
 			};
 			name = Release;
 		};
+		8AFF219D1D47385F005D2A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MLFloatHelpView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mrlu.MLFloatHelpView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8AFF219E1D47385F005D2A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MLFloatHelpView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mrlu.MLFloatHelpView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,6 +749,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8AFF219C1D47385F005D2A5E /* Build configuration list for PBXNativeTarget "MLFloatHelpView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFF219D1D47385F005D2A5E /* Debug */,
+				8AFF219E1D47385F005D2A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
