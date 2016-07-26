@@ -33,12 +33,16 @@
 ```
  @property (nonatomic, assign) BOOL enableLog; //是否开启log
 ```
-3.主动调用缓存图片
+3.自定义小时动画
+```
+@property (nonatomic, copy) void (^dismissAnimations)(void);
+```
+4.主动调用缓存图片
 ```
  //利用线程信号来控制下载并发
  + (void)cacheImages:(nullable NSArray *)imagesUrlArray;
 ```
-4.消失
+5.消失
 ```
  + (void)dismiss;
 ```
