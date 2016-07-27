@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MLCountdownControl.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>MLFloatHelpView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>8AFF21871D47385F005D2A5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8AFF21AD1D4769AB005D2A5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

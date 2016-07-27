@@ -11,6 +11,14 @@
 		468243F49D645803B1512C1D /* libPods-UI_PRO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ABC909A1CE031E82A07357 /* libPods-UI_PRO.a */; };
 		8A23C68B1D4202B30070C6F0 /* MLLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C68A1D4202B30070C6F0 /* MLLaunchAdView.m */; };
 		8A23C68C1D4202B30070C6F0 /* MLLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C68A1D4202B30070C6F0 /* MLLaunchAdView.m */; };
+		8A99D31E1D488FE800F2D683 /* BJVideoClassCountDownControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99D31D1D488FE800F2D683 /* BJVideoClassCountDownControl.m */; };
+		8A99D31F1D488FE800F2D683 /* BJVideoClassCountDownControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99D31D1D488FE800F2D683 /* BJVideoClassCountDownControl.m */; };
+		8A99D3201D488FE800F2D683 /* BJVideoClassCountDownControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99D31D1D488FE800F2D683 /* BJVideoClassCountDownControl.m */; };
+		8A99D3211D488FE800F2D683 /* BJVideoClassCountDownControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99D31D1D488FE800F2D683 /* BJVideoClassCountDownControl.m */; };
+		8A99D3241D48905400F2D683 /* TimeCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99D3231D48905400F2D683 /* TimeCardView.m */; };
+		8A99D3251D48905400F2D683 /* TimeCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99D3231D48905400F2D683 /* TimeCardView.m */; };
+		8A99D3261D48905400F2D683 /* TimeCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99D3231D48905400F2D683 /* TimeCardView.m */; };
+		8A99D3271D48905400F2D683 /* TimeCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99D3231D48905400F2D683 /* TimeCardView.m */; };
 		8AC224BE1D41BECC002BC2FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC224BD1D41BECC002BC2FF /* main.m */; };
 		8AC224C11D41BECC002BC2FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC224C01D41BECC002BC2FF /* AppDelegate.m */; };
 		8AC224C41D41BECC002BC2FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC224C31D41BECC002BC2FF /* ViewController.m */; };
@@ -35,6 +43,16 @@
 		8AFF21A71D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21A61D4738B6005D2A5E /* BJLiveCourseFloatView.m */; };
 		8AFF21A81D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21A61D4738B6005D2A5E /* BJLiveCourseFloatView.m */; };
 		8AFF21A91D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21A61D4738B6005D2A5E /* BJLiveCourseFloatView.m */; };
+		8AFF21B21D4769AB005D2A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21B11D4769AB005D2A5E /* main.m */; };
+		8AFF21B51D4769AB005D2A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21B41D4769AB005D2A5E /* AppDelegate.m */; };
+		8AFF21B81D4769AB005D2A5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21B71D4769AB005D2A5E /* ViewController.m */; };
+		8AFF21BB1D4769AB005D2A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF21B91D4769AB005D2A5E /* Main.storyboard */; };
+		8AFF21BD1D4769AB005D2A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF21BC1D4769AB005D2A5E /* Assets.xcassets */; };
+		8AFF21C01D4769AB005D2A5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF21BE1D4769AB005D2A5E /* LaunchScreen.storyboard */; };
+		8AFF21C81D4769E2005D2A5E /* MLCountDownControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21C71D4769E2005D2A5E /* MLCountDownControl.m */; };
+		8AFF21C91D4769E2005D2A5E /* MLCountDownControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21C71D4769E2005D2A5E /* MLCountDownControl.m */; };
+		8AFF21CA1D4769E2005D2A5E /* MLCountDownControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21C71D4769E2005D2A5E /* MLCountDownControl.m */; };
+		8AFF21CB1D4769E2005D2A5E /* MLCountDownControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF21C71D4769E2005D2A5E /* MLCountDownControl.m */; };
 		C29F21EF666011BEAD5D6A11 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD292CE240579171C352E879 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +63,10 @@
 		869803B84A6255D84285E1B4 /* Pods-MLLaunchADView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLLaunchADView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLLaunchADView/Pods-MLLaunchADView.debug.xcconfig"; sourceTree = "<group>"; };
 		8A23C6891D4202B30070C6F0 /* MLLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLaunchAdView.h; sourceTree = "<group>"; };
 		8A23C68A1D4202B30070C6F0 /* MLLaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLaunchAdView.m; sourceTree = "<group>"; };
+		8A99D31C1D488FE800F2D683 /* BJVideoClassCountDownControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJVideoClassCountDownControl.h; sourceTree = "<group>"; };
+		8A99D31D1D488FE800F2D683 /* BJVideoClassCountDownControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJVideoClassCountDownControl.m; sourceTree = "<group>"; };
+		8A99D3221D48905400F2D683 /* TimeCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeCardView.h; sourceTree = "<group>"; };
+		8A99D3231D48905400F2D683 /* TimeCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeCardView.m; sourceTree = "<group>"; };
 		8AC224B91D41BECC002BC2FF /* UI_PRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI_PRO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC224BD1D41BECC002BC2FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8AC224BF1D41BECC002BC2FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +101,18 @@
 		8AFF21A11D473887005D2A5E /* MLFloatHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLFloatHelpView.m; sourceTree = "<group>"; };
 		8AFF21A51D4738B6005D2A5E /* BJLiveCourseFloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLiveCourseFloatView.h; sourceTree = "<group>"; };
 		8AFF21A61D4738B6005D2A5E /* BJLiveCourseFloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJLiveCourseFloatView.m; sourceTree = "<group>"; };
+		8AFF21AE1D4769AB005D2A5E /* MLCountdownControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLCountdownControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFF21B11D4769AB005D2A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8AFF21B31D4769AB005D2A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8AFF21B41D4769AB005D2A5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8AFF21B61D4769AB005D2A5E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8AFF21B71D4769AB005D2A5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8AFF21BA1D4769AB005D2A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AFF21BC1D4769AB005D2A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AFF21BF1D4769AB005D2A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AFF21C11D4769AB005D2A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFF21C61D4769E2005D2A5E /* MLCountDownControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCountDownControl.h; sourceTree = "<group>"; };
+		8AFF21C71D4769E2005D2A5E /* MLCountDownControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCountDownControl.m; sourceTree = "<group>"; };
 		B13AC0A47E6CD0C812C1C5D1 /* Pods-MLLaunchADView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLLaunchADView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLLaunchADView/Pods-MLLaunchADView.release.xcconfig"; sourceTree = "<group>"; };
 		B2A1A6CC7253EAB85301900E /* libPods-MLLaunchADView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLLaunchADView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD292CE240579171C352E879 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +137,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8AFF21851D47385F005D2A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFF21AB1D4769AB005D2A5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,6 +189,7 @@
 				8AC224BB1D41BECC002BC2FF /* UI_PRO */,
 				8AC224F31D41C7C2002BC2FF /* MLLaunchADView */,
 				8AFF21891D47385F005D2A5E /* MLFloatHelpView */,
+				8AFF21AF1D4769AB005D2A5E /* MLCountdownControl */,
 				8AC224BA1D41BECC002BC2FF /* Products */,
 				89D8EE35A262231B33971BDA /* Pods */,
 				3838E02CD78060D13D77301D /* Frameworks */,
@@ -160,6 +202,7 @@
 				8AC224B91D41BECC002BC2FF /* UI_PRO.app */,
 				8AC224F21D41C7C2002BC2FF /* MLLaunchADView.app */,
 				8AFF21881D47385F005D2A5E /* MLFloatHelpView.app */,
+				8AFF21AE1D4769AB005D2A5E /* MLCountdownControl.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,6 +292,44 @@
 			path = MLFloatHelpView;
 			sourceTree = "<group>";
 		};
+		8AFF21AF1D4769AB005D2A5E /* MLCountdownControl */ = {
+			isa = PBXGroup;
+			children = (
+				8AFF21C51D4769E2005D2A5E /* MLCountdownControl */,
+				8A99D31C1D488FE800F2D683 /* BJVideoClassCountDownControl.h */,
+				8A99D31D1D488FE800F2D683 /* BJVideoClassCountDownControl.m */,
+				8AFF21B31D4769AB005D2A5E /* AppDelegate.h */,
+				8AFF21B41D4769AB005D2A5E /* AppDelegate.m */,
+				8AFF21B61D4769AB005D2A5E /* ViewController.h */,
+				8AFF21B71D4769AB005D2A5E /* ViewController.m */,
+				8AFF21B91D4769AB005D2A5E /* Main.storyboard */,
+				8AFF21BC1D4769AB005D2A5E /* Assets.xcassets */,
+				8AFF21BE1D4769AB005D2A5E /* LaunchScreen.storyboard */,
+				8AFF21C11D4769AB005D2A5E /* Info.plist */,
+				8AFF21B01D4769AB005D2A5E /* Supporting Files */,
+			);
+			path = MLCountdownControl;
+			sourceTree = "<group>";
+		};
+		8AFF21B01D4769AB005D2A5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AFF21B11D4769AB005D2A5E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8AFF21C51D4769E2005D2A5E /* MLCountdownControl */ = {
+			isa = PBXGroup;
+			children = (
+				8AFF21C61D4769E2005D2A5E /* MLCountDownControl.h */,
+				8AFF21C71D4769E2005D2A5E /* MLCountDownControl.m */,
+				8A99D3221D48905400F2D683 /* TimeCardView.h */,
+				8A99D3231D48905400F2D683 /* TimeCardView.m */,
+			);
+			path = MLCountdownControl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,6 +390,23 @@
 			productReference = 8AFF21881D47385F005D2A5E /* MLFloatHelpView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8AFF21AD1D4769AB005D2A5E /* MLCountdownControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFF21C21D4769AB005D2A5E /* Build configuration list for PBXNativeTarget "MLCountdownControl" */;
+			buildPhases = (
+				8AFF21AA1D4769AB005D2A5E /* Sources */,
+				8AFF21AB1D4769AB005D2A5E /* Frameworks */,
+				8AFF21AC1D4769AB005D2A5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLCountdownControl;
+			productName = MLCountdownControl;
+			productReference = 8AFF21AE1D4769AB005D2A5E /* MLCountdownControl.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -325,6 +423,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					8AFF21871D47385F005D2A5E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					8AFF21AD1D4769AB005D2A5E = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -345,6 +446,7 @@
 				8AC224B81D41BECC002BC2FF /* UI_PRO */,
 				8AC224F11D41C7C2002BC2FF /* MLLaunchADView */,
 				8AFF21871D47385F005D2A5E /* MLFloatHelpView */,
+				8AFF21AD1D4769AB005D2A5E /* MLCountdownControl */,
 			);
 		};
 /* End PBXProject section */
@@ -377,6 +479,16 @@
 				8AFF219A1D47385F005D2A5E /* LaunchScreen.storyboard in Resources */,
 				8AFF21971D47385F005D2A5E /* Assets.xcassets in Resources */,
 				8AFF21951D47385F005D2A5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFF21AC1D4769AB005D2A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFF21C01D4769AB005D2A5E /* LaunchScreen.storyboard in Resources */,
+				8AFF21BD1D4769AB005D2A5E /* Assets.xcassets in Resources */,
+				8AFF21BB1D4769AB005D2A5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +595,9 @@
 				8AFF21A21D473887005D2A5E /* MLFloatHelpView.m in Sources */,
 				8AC224C41D41BECC002BC2FF /* ViewController.m in Sources */,
 				8AFF21A71D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */,
+				8AFF21C81D4769E2005D2A5E /* MLCountDownControl.m in Sources */,
+				8A99D3241D48905400F2D683 /* TimeCardView.m in Sources */,
+				8A99D31E1D488FE800F2D683 /* BJVideoClassCountDownControl.m in Sources */,
 				8AC224C11D41BECC002BC2FF /* AppDelegate.m in Sources */,
 				8AC224BE1D41BECC002BC2FF /* main.m in Sources */,
 				8A23C68B1D4202B30070C6F0 /* MLLaunchAdView.m in Sources */,
@@ -496,6 +611,9 @@
 				8AFF21A31D473887005D2A5E /* MLFloatHelpView.m in Sources */,
 				8AC224FC1D41C7C2002BC2FF /* ViewController.m in Sources */,
 				8AFF21A81D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */,
+				8AFF21C91D4769E2005D2A5E /* MLCountDownControl.m in Sources */,
+				8A99D3251D48905400F2D683 /* TimeCardView.m in Sources */,
+				8A99D31F1D488FE800F2D683 /* BJVideoClassCountDownControl.m in Sources */,
 				8AC224F91D41C7C2002BC2FF /* AppDelegate.m in Sources */,
 				8AC224F61D41C7C2002BC2FF /* main.m in Sources */,
 				8A23C68C1D4202B30070C6F0 /* MLLaunchAdView.m in Sources */,
@@ -507,10 +625,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AFF21921D47385F005D2A5E /* ViewController.m in Sources */,
+				8AFF21CA1D4769E2005D2A5E /* MLCountDownControl.m in Sources */,
 				8AFF218F1D47385F005D2A5E /* AppDelegate.m in Sources */,
 				8AFF21A91D4738B6005D2A5E /* BJLiveCourseFloatView.m in Sources */,
 				8AFF21A41D473887005D2A5E /* MLFloatHelpView.m in Sources */,
+				8A99D3261D48905400F2D683 /* TimeCardView.m in Sources */,
 				8AFF218C1D47385F005D2A5E /* main.m in Sources */,
+				8A99D3201D488FE800F2D683 /* BJVideoClassCountDownControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFF21AA1D4769AB005D2A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFF21B81D4769AB005D2A5E /* ViewController.m in Sources */,
+				8A99D3271D48905400F2D683 /* TimeCardView.m in Sources */,
+				8AFF21CB1D4769E2005D2A5E /* MLCountDownControl.m in Sources */,
+				8AFF21B51D4769AB005D2A5E /* AppDelegate.m in Sources */,
+				8AFF21B21D4769AB005D2A5E /* main.m in Sources */,
+				8A99D3211D488FE800F2D683 /* BJVideoClassCountDownControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +695,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				8AFF21991D47385F005D2A5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8AFF21B91D4769AB005D2A5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFF21BA1D4769AB005D2A5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AFF21BE1D4769AB005D2A5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFF21BF1D4769AB005D2A5E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -720,6 +870,28 @@
 			};
 			name = Release;
 		};
+		8AFF21C31D4769AB005D2A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MLCountdownControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mrlu.MLCountdownControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8AFF21C41D4769AB005D2A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MLCountdownControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mrlu.MLCountdownControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -757,6 +929,16 @@
 				8AFF219E1D47385F005D2A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFF21C21D4769AB005D2A5E /* Build configuration list for PBXNativeTarget "MLCountdownControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFF21C31D4769AB005D2A5E /* Debug */,
+				8AFF21C41D4769AB005D2A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
