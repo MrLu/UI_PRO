@@ -8,6 +8,8 @@
 
 #import "MLFloatHelpView.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface BJLiveCourseFloatView : MLFloatHelpView
 
 @property (strong, nonatomic) NSDictionary *data;
@@ -16,3 +18,5 @@
 - (void)showWithView:(UIView *)view;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface TimeCardView : UIView
 
 @property (nonatomic, strong) UILabel *hourLabel; //小时
@@ -16,3 +18,5 @@
 @property (nonatomic, assign) long long timeStamp; //时间挫
 
 @end
+
+NS_ASSUME_NONNULL_END
