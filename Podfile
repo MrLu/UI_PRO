@@ -4,10 +4,10 @@
 # use_frameworks!
 
 target 'UI_PRO' do
-pod 'SDWebImage', '~> 3.8.1'
+pod 'SDWebImage'
 end
 
 target 'MLLaunchADView' do
-pod 'SDWebImage', '~> 3.8.1'
+pod 'SDWebImage'
 end
 

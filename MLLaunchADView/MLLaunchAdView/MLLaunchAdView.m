@@ -42,8 +42,7 @@
 - (void)setImageUrl:(NSString *)imageUrl {
     if (imageUrl) {
         _imageUrl = imageUrl;
-        NSString *imageKey = [[SDWebImageManager sharedManager] cacheKeyForURL:[NSURL URLWithString:_imageUrl]];
-        [self setImage:[[SDWebImageManager sharedManager].imageCache imageFromDiskCacheForKey:imageKey]];
+        [self sd_setImageWithURL:[NSURL URLWithString:_imageUrl] placeholderImage:nil];
     }
 }
 
@@ -70,6 +69,8 @@
 @property (nonatomic, strong, readwrite) AdViewCell *contentImageView;
 @property (nonatomic, strong, readwrite) UIButton *closeBtn;
 @property (nonatomic, strong, readwrite) UIButton *timeBtn;
+@property (nonatomic, strong, readwrite) UIImageView *logoImageView;
+@property (nonatomic, strong) UIImage *logoImage;
 
 @property (nonatomic, copy) DismissAction dismissAction;   //点击动作
 
@@ -97,6 +98,10 @@ static dispatch_queue_t _downloadQueue;
 }
 
 + (instancetype)showInView:(UIView *)view imagesUrlArray:(NSArray<AdModel *> *)imagesUrlArray dismissAction:(DismissAction)dismissAction {
+    return [self showInView:view logoImage:nil imagesUrlArray:imagesUrlArray dismissAction:dismissAction];
+}
+
++ (instancetype)showInView:(UIView *)view logoImage:(nullable UIImage *)logoImage imagesUrlArray:(nullable NSArray<AdModel *> *)imagesUrlArray dismissAction:(nullable DismissAction)dismissAction {
     //广告定制需求
     NSArray *displayImageUrlArray = [MLLaunchAdView getCustomDisplayImage:imagesUrlArray];
     [MLLaunchAdView log:[NSString stringWithFormat:@"有效期内:%@",displayImageUrlArray]];
@@ -117,7 +122,7 @@ static dispatch_queue_t _downloadQueue;
     
     MLLaunchAdView *homeAdView = [MLLaunchAdView shareInstance];
     if (!homeAdView.isShow) {
-        [homeAdView showInView:view imagesUrlArray:imagesUrlArray dismissAction:dismissAction];
+        [homeAdView showInView:view logoImage:logoImage imagesUrlArray:imagesUrlArray dismissAction:dismissAction];
     }
     return homeAdView;
 }
@@ -133,7 +138,7 @@ static dispatch_queue_t _downloadQueue;
     }
     BOOL haveCache = NO;
     for (AdModel *model in imagesUrlArray) {
-        if ([self inTheTimeRang:model] && [[SDWebImageManager sharedManager] cachedImageExistsForURL:[NSURL URLWithString:model.imageUrl]]) {
+        if ([self inTheTimeRang:model] && [self cachedImageExistsForURL:[NSURL URLWithString:model.imageUrl]]) {
             haveCache = YES;
             break;
         }
@@ -164,8 +169,9 @@ static dispatch_queue_t _downloadQueue;
 - (void)setUpView
 {
     [self setBackgroundColor:[UIColor whiteColor]];
+    
     AdViewCell *contentImageView = [[AdViewCell alloc]initWithFrame:self.bounds];
-    [contentImageView setContentMode:UIViewContentModeScaleToFill];
+    [contentImageView setContentMode:UIViewContentModeScaleAspectFill];
     _contentImageView = contentImageView;
     [self addSubview:contentImageView];
     [contentImageView setClipsToBounds:YES];
@@ -195,6 +201,18 @@ static dispatch_queue_t _downloadQueue;
     [self addSubview:delayBtn];
 }
 
+- (void)configLogoView {
+    CGFloat logoheight = 150;
+    if (self.logoImage) {
+        logoheight = 150;
+        UIImageView *logoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.bounds)-logoheight, CGRectGetWidth(self.bounds), logoheight)];
+        _logoImageView = logoImageView;
+        _logoImageView.backgroundColor = [UIColor whiteColor];
+        [self addSubview:logoImageView];
+    }
+    self.contentImageView.frame = UIEdgeInsetsInsetRect(self.bounds, UIEdgeInsetsMake(0, 0, logoheight, 0));
+}
+
 //缓存ImageUrl
 + (void)cacheImages:(NSArray<AdModel *> *)imagesUrlArray
 {
@@ -202,13 +220,13 @@ static dispatch_queue_t _downloadQueue;
         [imagesUrlArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             NSString *imagesUrl = [(AdModel *)obj imageUrl];
             NSURL *url = [NSURL URLWithString:imagesUrl];
-            if (![[SDWebImageManager sharedManager] cachedImageExistsForURL:url]) {
+            if (![self cachedImageExistsForURL:url]) {
                 dispatch_async(_downloadQueue, ^{
                     dispatch_semaphore_wait(_semaphore, DISPATCH_TIME_FOREVER);
                     [MLLaunchAdView log:[NSString stringWithFormat:@"开始缓存:%@",url.description]];
-                    [[SDWebImageManager sharedManager]downloadImageWithURL:url options:SDWebImageContinueInBackground|SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                    [[SDWebImageManager sharedManager] loadImageWithURL:url options:SDWebImageContinueInBackground|SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
                         [MLLaunchAdView log:[NSString stringWithFormat:@"缓存中:%@",@(receivedSize)]];
-                    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                    } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
                         dispatch_semaphore_signal(_semaphore);
                         if (!error) {
                             [MLLaunchAdView log:[NSString stringWithFormat:@"缓存完成:%@",imageURL.description]];
@@ -220,14 +238,20 @@ static dispatch_queue_t _downloadQueue;
     }
 }
 
-- (void)showInView:(UIView *)view imagesUrlArray:(NSArray<AdModel *> *)imagesUrlArray dismissAction:(DismissAction)dismissAction
+- (void)showInView:(UIView *)view imagesUrlArray:(NSArray<AdModel *> *)imagesUrlArray dismissAction:(DismissAction)dismissAction {
+    [self showInView:view logoImage:nil imagesUrlArray:imagesUrlArray dismissAction:dismissAction];
+}
+
+- (void)showInView:(UIView *)view logoImage:(UIImage *)logoImage imagesUrlArray:(NSArray<AdModel *> *)imagesUrlArray dismissAction:(DismissAction)dismissAction
 {
+    [self configLogoView];
     _isShow = YES;
     if (!view) {
         view = self.cusWindow;
     }
     _parentView = view;
     self.dismissAction = dismissAction;
+    self.logoImage = logoImage;
     
     AdModel *data = [self setDisplayImage:imagesUrlArray];
     [_contentImageView setImageUrl:data.imageUrl];
@@ -270,7 +294,7 @@ static dispatch_queue_t _downloadQueue;
     NSMutableArray *tempArray = [NSMutableArray array];
     if ([imagesUrlArray count] > 0) {
         for (AdModel *model in imagesUrlArray) {
-            if ([MLLaunchAdView inTheTimeRang:model] && [[SDWebImageManager sharedManager] cachedImageExistsForURL:[NSURL URLWithString:model.imageUrl]]) {
+            if ([MLLaunchAdView inTheTimeRang:model] && [MLLaunchAdView cachedImageExistsForURL:[NSURL URLWithString:model.imageUrl]]) {
                 [tempArray addObject:model];
             }
         }
@@ -282,7 +306,7 @@ static dispatch_queue_t _downloadQueue;
         //如果相同时间段中随机一个图片
         model = [tempArray objectAtIndex:(arc4random()%[tempArray count])];
         NSString *imageUrl = model.imageUrl;
-        while (![[SDWebImageManager sharedManager] cachedImageExistsForURL:[NSURL URLWithString:imageUrl]]) {
+        while (![MLLaunchAdView cachedImageExistsForURL:[NSURL URLWithString:imageUrl]]) {
             model = [tempArray objectAtIndex:(arc4random()%[tempArray count])];
             imageUrl = model.imageUrl;
         }
@@ -315,6 +339,12 @@ static dispatch_queue_t _downloadQueue;
             weakself.dismissAction(hasCacheImages,isTap,weakself.contentImageView.imageUrl);
         }];
     }
+}
+
+#pragma mark - Internal Helpers
++ (BOOL)cachedImageExistsForURL:(NSURL *)url {
+    NSString *key = [[SDWebImageManager sharedManager] cacheKeyForURL:url];
+    return [[SDWebImageManager sharedManager].imageCache imageFromCacheForKey:key]?YES:NO;
 }
 
 #pragma mark - property Getter/Setter
