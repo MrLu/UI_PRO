@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06771BBD0C28259135162E3D /* libPods-MLLaunchADView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A1A6CC7253EAB85301900E /* libPods-MLLaunchADView.a */; };
+		08F09AB320C62391004F2AB2 /* MLCountDowner.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F09AB220C62390004F2AB2 /* MLCountDowner.m */; };
 		468243F49D645803B1512C1D /* libPods-UI_PRO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ABC909A1CE031E82A07357 /* libPods-UI_PRO.a */; };
 		8A23C68B1D4202B30070C6F0 /* MLLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C68A1D4202B30070C6F0 /* MLLaunchAdView.m */; };
 		8A23C68C1D4202B30070C6F0 /* MLLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A23C68A1D4202B30070C6F0 /* MLLaunchAdView.m */; };
@@ -57,6 +58,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08F09AB120C62390004F2AB2 /* MLCountDowner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCountDowner.h; sourceTree = "<group>"; };
+		08F09AB220C62390004F2AB2 /* MLCountDowner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCountDowner.m; sourceTree = "<group>"; };
 		4C6AD65F755E7B07C03482F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		80E02869B2799CE23B4435B6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		81ABC909A1CE031E82A07357 /* libPods-UI_PRO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UI_PRO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -322,6 +325,8 @@
 		8AFF21C51D4769E2005D2A5E /* MLCountdownControl */ = {
 			isa = PBXGroup;
 			children = (
+				08F09AB120C62390004F2AB2 /* MLCountDowner.h */,
+				08F09AB220C62390004F2AB2 /* MLCountDowner.m */,
 				8AFF21C61D4769E2005D2A5E /* MLCountDownControl.h */,
 				8AFF21C71D4769E2005D2A5E /* MLCountDownControl.m */,
 				8A99D3221D48905400F2D683 /* TimeCardView.h */,
@@ -639,6 +644,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F09AB320C62391004F2AB2 /* MLCountDowner.m in Sources */,
 				8AFF21B81D4769AB005D2A5E /* ViewController.m in Sources */,
 				8A99D3271D48905400F2D683 /* TimeCardView.m in Sources */,
 				8AFF21CB1D4769E2005D2A5E /* MLCountDownControl.m in Sources */,
