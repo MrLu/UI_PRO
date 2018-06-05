@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MLLaunchAdView.h"
-
+#import <CoreImage/CoreImage.h>
 @interface AppDelegate ()
 
 @end
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [MLLaunchAdView shareInstance].enableLog = YES;
-    [MLLaunchAdView showInView:nil imagesUrlArray:[AdModel initWithImageUrls:@[
+    [MLLaunchAdView showInView:nil logoImage:[[UIImage alloc] init] imagesUrlArray:[AdModel initWithImageUrls:@[
                                                                                @"http://e.hiphotos.baidu.com/zhidao/pic/item/902397dda144ad348dec21dcd6a20cf431ad851e.jpg",
                                                                                @"http://e.hiphotos.baidu.com/zhidao/pic/item/a2cc7cd98d1001e90d5d6414ba0e7bec54e79743.jpg",
                                                                                @"http://e.hiphotos.baidu.com/zhidao/pic/item/574e9258d109b3de70616b84ccbf6c81810a4c04.jpg",

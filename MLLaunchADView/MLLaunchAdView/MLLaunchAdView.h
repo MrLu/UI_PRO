@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/SDWebImageManager.h>
 
 #define EleFont @"DBLCDTempBlack"
@@ -38,6 +39,8 @@ typedef void(^DismissAction)(BOOL hasCacheImages, BOOL isTap,  NSString * _Nulla
 @property (nonatomic, strong, readonly) UIButton *timeBtn; //倒计时按钮
 
 @property (nonatomic, strong, readonly) AdViewCell *contentImageView; //内容视图
+@property (nonatomic, strong, readonly, nullable) UIImageView *logoImageView; //logoImageView
+
 @property (nonatomic, assign) NSTimeInterval seconds; //default 5s;
 @property (nonatomic, assign) BOOL enableLog; //是否开启log
 
@@ -46,6 +49,11 @@ typedef void(^DismissAction)(BOOL hasCacheImages, BOOL isTap,  NSString * _Nulla
 + (instancetype)shareInstance;
 
 + (instancetype)showInView:(nullable UIView *)view
+            imagesUrlArray:(nullable NSArray<AdModel *> *)imagesUrlArray
+             dismissAction:(nullable DismissAction)dismissAction;
+
++ (instancetype)showInView:(nullable UIView *)view
+                 logoImage:(nullable UIImage *)logoImage
             imagesUrlArray:(nullable NSArray<AdModel *> *)imagesUrlArray
              dismissAction:(nullable DismissAction)dismissAction;
 
